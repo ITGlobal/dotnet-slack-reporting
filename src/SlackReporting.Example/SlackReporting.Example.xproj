@@ -6,7 +6,7 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>100fc281-eb55-4f0a-a127-81a19d228151</ProjectGuid>
+    <ProjectGuid>73900a4a-14d6-4ce2-a8f1-dd1d56d18e85</ProjectGuid>
     <RootNamespace>ITGlobal.SlackReporting</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>

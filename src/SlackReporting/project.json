@@ -1,13 +1,42 @@
-﻿{
-  "version": "1.0.0-*",
-
-  "dependencies": {
-    "NETStandard.Library": "1.6.0"
+{
+  "title": "SlackReporting",
+  "version": "0.1.0",
+  "copyright": "IT Global LLC",
+  "authors": [
+    "IT Global LLC"
+  ],
+  "description": "Small utility library to report last state of any long-running process to Slack",
+  "packOptions": {
+    "summary": "Small utility library to report last state of any long-running process to Slack",
+    "projectUrl": "https://github.com/itglobal/dotnet-slack-reporting",
+    "tags": [
+      "slack",
+      "log",
+      "reporting",
+      "notification"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/itglobal/dotnet-slack-reporting.git"
+    },
+    "licenseUrl": "https://raw.githubusercontent.com/itglobal/dotnet-slack-reporting/master/LICENSE",
+    "owners": [
+      "IT Global LLC"
+    ]
   },
-
+  "buildOptions": {
+    "xmlDoc": true
+  },
+  "dependencies": {
+    "NETStandard.Library": "1.6.0",
+    "Newtonsoft.Json": "9.0.1"
+  },
   "frameworks": {
-    "netstandard1.6": {
-      "imports": "dnxcore50"
+    "netstandard1.6": {},
+    "net45": {
+      "frameworkAssemblies": {
+        "System.Net.Http": "4.0.0.0"
+      }
     }
   }
 }
