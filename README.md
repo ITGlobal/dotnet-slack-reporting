@@ -1,9 +1,23 @@
 SlackReporting
 ==============
 
+[![Build status](https://ci.appveyor.com/api/projects/status/qhfm43174naoxo48?svg=true)](https://ci.appveyor.com/project/itgloballlc/dotnet-slack-reporting)
+[![Nuget](https://img.shields.io/nuget/v/SlackReporting.svg)](https://www.nuget.org/packages/SlackReporting)
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
+
 Small utility library to report last state of any long-running process to Slack.
 
 ![](demo.gif)
+
+Installing
+----------
+
+Just add a nuget package into your project:
+
+```powershell
+PS> Install-Package SlackReporting
+```
+
 
 Usage
 -----

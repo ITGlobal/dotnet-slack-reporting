@@ -61,6 +61,9 @@ namespace ITGlobal.SlackReporting
             }
         }
 
+        /// <summary>
+        ///    Dispose()
+        /// </summary>
         public void Dispose()
         {
             lock (_lock)
