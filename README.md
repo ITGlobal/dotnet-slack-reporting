@@ -1,13 +1,21 @@
 SlackReporting
 ==============
 
-[![Build status](https://ci.appveyor.com/api/projects/status/qhfm43174naoxo48?svg=true)](https://ci.appveyor.com/project/itgloballlc/dotnet-slack-reporting)
-[![Nuget](https://img.shields.io/nuget/v/SlackReporting.svg)](https://www.nuget.org/packages/SlackReporting)
-[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
+[![AppVeyor](https://img.shields.io/appveyor/ci/itgloballlc/dotnet-slack-reporting.svg?style=flat-square)](https://ci.appveyor.com/project/itgloballlc/dotnet-slack-reporting)
+[![NuGet](https://img.shields.io/nuget/v/SlackReporting.svg?style=flat-square)](https://www.nuget.org/packages/SlackReporting)
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
+
+
 
 Small utility library to report last state of any long-running process to Slack.
 
 ![](demo.gif)
+
+Supports:
+
+* .NET Standard 1.1
+* .NET 4.5
+* .NET 4.0
 
 Installing
 ----------
