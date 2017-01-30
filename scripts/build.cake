@@ -12,10 +12,6 @@ DoInDirectory(solutionDir, () =>
 {
   var artifactsDir = MakeAbsolute(solutionDir.Combine("./artifacts"));
   var srcDir = MakeAbsolute(solutionDir.Combine("./src"));
-  var samplesDir = MakeAbsolute(solutionDir.Combine("./samples"));
-
-  var libraryProjects = GetFiles(srcDir + "/**/project.json");
-  var sampleProjects = GetFiles(samplesDir + "/**/project.json");
   var projects = GetFiles(solutionDir + "/**/project.json");
 
   var configuration = Argument("configuration", "Release");
@@ -132,7 +128,7 @@ DoInDirectory(solutionDir, () =>
     .IsDependentOn("compile")
     .Does(() => 
     {
-        foreach(var project in libraryProjects) 
+        foreach(var project in GetFiles(solutionDir + "./src/SlackReporting/project.json")) 
         {
           Information("Packing {0}", project.GetDirectory().GetDirectoryName());
           Exec("dotnet", "pack", project.FullPath, "-o" , artifactsDir.FullPath);
