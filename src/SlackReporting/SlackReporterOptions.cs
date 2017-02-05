@@ -13,7 +13,7 @@ namespace ITGlobal.SlackReporting
         private const string DEFAULT_CHANNEL = "#general";
 
         /// <summary>
-        ///     Slack API root URL (e.g. https://slack.com/api/)
+        ///     Slack API root URL (e.g. https://slack.com/)
         ///     This is a required property.
         /// </summary>
         public string Url { get; set; } = DEFAULT_URL;
